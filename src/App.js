@@ -4,6 +4,10 @@ import DisplayBlock from './DisplayBlock';
 import PriceEntryField from './PriceEntryField';
 import VatRateField from './VatRateField';
 
+function Dummy(id) {
+  var SQL = "Select * from users where userid="+id;
+}
+
 function App() {
   const [netPrice, setNetPrice] = useState(0.0);
   const [grossPrice, setGrossPrice] = useState(0.0);
